@@ -227,7 +227,8 @@
 
     function handdleEnter(){
         this.classList.add('trigger-enter')
-        setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150)
+        setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active')
+        , 150)
         background.classList.add('open')
         
         const dropDown = this.querySelector('.dropdown')
@@ -251,8 +252,8 @@
     }
 
     function handdleLeave(){
-        this.classList.remove('trigger-enter-active')
-        setTimeout(() => this.classList.remove('trigger-enter'), 150)
+        this.classList.remove('trigger-enter')
+        setTimeout(() => this.classList.remove('trigger-enter-active'), 350)
         background.classList.remove('open')
     }
 
